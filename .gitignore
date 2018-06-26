@@ -1,0 +1,17 @@
+.idea
+.classpath
+.project
+*.class
+*.iml
+*.eml
+target
+classes
+*.log
+*.log.*
+**/resources/zheng-admin
+generatorConfig.xml
+.DS_Store
+*.cache
+*.lock
+/build/
+*.settings
