@@ -18,7 +18,7 @@ public class ArticleTypeDao {
 	public boolean operationArticleType(String operation, ArticleTypeBean single) {		
 		String sql = null;
 		if (operation.equals("add"))
-			sql = "insert into tb_articleType values ('" + single.getTypeName()+ "','" + single.getTypeInfo() + "')";
+			sql = "insert into tb_articleType(articleType_name,articleType_info) values ('" + single.getTypeName()+ "','" + single.getTypeInfo() + "')";
 		if (operation.equals("modify"))
 			sql="update tb_articleType set articleType_name='"+single.getTypeName()+"',articleType_info='"+single.getTypeInfo()+"' where articleType_id="+single.getId();
 		if (operation.equals("delete"))

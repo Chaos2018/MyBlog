@@ -19,7 +19,7 @@ public class WordDao {
 		/* …˙≥…SQL”Ôæ‰ */
 		String sql = null;
 		if (oper.equals("add"))					//∑¢±Ì¡Ù—‘
-			sql = "insert into tb_word values('"+single.getWordTitle()+"','"+single.getWordContent()+"','"+single.getWordTime()+"','"+single.getWordAuthor()+"')";		
+			sql = "insert into tb_word(word_Title,word_Content,word_sdTime,word_Author) values('"+single.getWordTitle()+"','"+single.getWordContent()+"','"+single.getWordTime()+"','"+single.getWordAuthor()+"')";
 		if (oper.equals("delete"))				//…æ≥˝¡Ù—‘
 			sql = "delete from tb_word where id=" + single.getId();
 

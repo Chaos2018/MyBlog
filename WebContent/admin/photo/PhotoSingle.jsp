@@ -6,12 +6,12 @@
 <body>
     <center>
         <table border="1">
-            <tr><td colspan="2"><%@ include file="view/AdminTop.jsp" %></td></tr>
+            <tr><td colspan="2"><%@ include file="../view/AdminTop.jsp" %></td></tr>
             <tr>
-                <td><jsp:include page="AdminLeft.jsp"/></td>
+                <td><jsp:include page="../view/AdminLeft.jsp"/></td>
                 <td>后台主页内容</td>
             </tr>
-            <tr><td colspan="2"><%@ include file="view/AdminEnd.jsp" %></td></tr>
+            <tr><td colspan="2"><%@ include file="../view/AdminEnd.jsp" %></td></tr>
         </table>
     </center>
 </body>

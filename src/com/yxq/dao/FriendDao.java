@@ -21,7 +21,7 @@ public class FriendDao {
 		if(operation==null)
 			operation="";		
 		if(operation.equals("add"))
-			sql="insert into tb_friend values('"+single.getName()+"','"+single.getSex()+"','"+single.getOicq()+"','"+single.getBlog()+"')";
+			sql="insert into tb_friend(friend_name,friend_sex,friend_oicq,friend_blog) values('"+single.getName()+"','"+single.getSex()+"','"+single.getOicq()+"','"+single.getBlog()+"')";
 		if(operation.equals("modify"))
 			sql="update tb_friend set friend_name='"+single.getName()+"',friend_sex='"+single.getSex()+"',friend_OICQ='"+single.getOicq()+"',friend_blog='"+single.getBlog()+"' where id="+single.getId();
 		if(operation.equals("delete"))

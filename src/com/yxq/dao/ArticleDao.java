@@ -25,7 +25,7 @@ public class ArticleDao {
 		/* 生成SQL语句 */
 		String sql = null;
 		if (oper.equals("add"))					//发表新文章
-			sql = "insert into tb_article values ('" + single.getTypeId() + "','"+ single.getTitle() + "','" + single.getContent() + "','"+ single.getSdTime()+ "','"+single.getCreate()+"','" + single.getInfo()+"',"+single.getCount() + ")";
+			sql = "insert into tb_article(article_typeID,article_title,article_content,article_sdTime,article_create,article_info,article_count) values ('" + single.getTypeId() + "','"+ single.getTitle() + "','" + single.getContent() + "','"+ single.getSdTime()+ "','"+single.getCreate()+"','" + single.getInfo()+"',"+single.getCount() + ")";
 		if (oper.equals("modify"))				//修改文章
 			sql = "update tb_article set article_typeID=" + single.getTypeId()+ ",article_title='" + single.getTitle() + "',article_content='"+ single.getContent() +"',article_create='"+single.getCreate()+ "',article_info='"+single.getInfo()+"' where id=" + single.getId();
 		if (oper.equals("delete"))				//删除文章

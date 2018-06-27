@@ -33,7 +33,7 @@
 						<td>
 							<input type="submit" class="btn_bg" value="登 录">
 			    			<input type="reset" class="btn_bg" value="重 置">	
-		    				<a href="index.jsp">返回首页</a><br><%=basePath%>
+		    				<a href="/index.jsp">返回首页</a><br><%=basePath%>
 		    			</td>
 					</tr>
 				 </form>

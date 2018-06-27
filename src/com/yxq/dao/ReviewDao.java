@@ -19,7 +19,7 @@ public class ReviewDao {
 		boolean flag = false;
 		String sql = "";
 		if (operation.equals("add"))
-			sql = "insert into tb_review values (" + single.getArticleId()+ ",'" + single.getReAuthor()+"','"+single.getReContent()+"','"+single.getReSdTime()+"')";
+			sql = "insert into tb_review(review_articleId,review_Author,review_Content,review_sdTime) values (" + single.getArticleId()+ ",'" + single.getReAuthor()+"','"+single.getReContent()+"','"+single.getReSdTime()+"')";
 		if (operation.equals("É¾³ý"))
 			sql = "delete from tb_restore where id='" + single.getId() + "'";
 		if (connection.executeUpdate(sql)) {

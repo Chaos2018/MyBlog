@@ -125,7 +125,8 @@ public class PhotoServlet extends HttpServlet {
 	 * @功能 上传图片
 	 */
 	public void addPhoto(HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException {
-		String filePath = "front\\photo\\pic\\";
+		//String filePath = "front\\photo\\pic\\";
+		String filePath = "front\\photo\\";
 		String messages="";
 		String forward="";
 		String href="";
