@@ -9,9 +9,9 @@
 <body>
     <center>
         <table width="778" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="word-break:break-all">
-            <tr><td colspan="2"></td></tr>
+			<tr><td colspan="2"><%@ include file="../view/AdminTop.jsp" %></td></tr>
             <tr>
-                <td valign="top"></td>
+				<td><jsp:include page="../view/AdminLeft.jsp"/></td>
                 <td align="center" valign="top">
                 	<form action="/ArticleServlet" method="post">
                 	<input type="hidden" name="action" value="add">
@@ -69,7 +69,7 @@
                 	</form>
                 </td>
             </tr>
-            <tr><td colspan="2"></td></tr>
+			<tr><td colspan="2"><%@ include file="../view/AdminEnd.jsp" %></td></tr>
         </table>
     </center>
 </body>

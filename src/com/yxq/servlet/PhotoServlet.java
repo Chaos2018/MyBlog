@@ -127,6 +127,12 @@ public class PhotoServlet extends HttpServlet {
 	public void addPhoto(HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException {
 		//String filePath = "front\\photo\\pic\\";
 		String filePath = "front\\\\photo\\\\pic\\\\";
+		//如果目录不存在就创建
+		String _filePath = getServletContext().getRealPath("/front/photo/pic");
+		java.io.File _file= new java.io.File(_filePath);
+		if (!_file.exists()){
+			_file.mkdir();
+		}
 		String messages="";
 		String forward="";
 		String href="";
