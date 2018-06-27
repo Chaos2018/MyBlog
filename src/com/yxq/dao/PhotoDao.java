@@ -19,7 +19,7 @@ public class PhotoDao {
 		if (operation.equals("delete"))
 			sql = "delete from tb_photo where id=" + single.getId();
 		if (operation.equals("upload"))
-			sql = "insert into tb_photo(photo_Addr,photo_Info,photo_sdTime) values ('"+ single.getPhotoAddr() + "','"+ single.getPhotoTime() + "','"+ single.getPhotoInfo() + "')";
+			sql = "insert into tb_photo(photo_Addr,photo_sdTime,photo_Info) values ('"+ single.getPhotoAddr() + "','"+ single.getPhotoTime() + "','"+ single.getPhotoInfo() + "')";
 		boolean mark=connection.executeUpdate(sql);			
 		return mark;
 	}
@@ -61,8 +61,8 @@ public class PhotoDao {
 					photoBean = new PhotoBean();
 					photoBean.setId(rs.getInt(1));
 					photoBean.setPhotoAddr(rs.getString(2));
-					photoBean.setPhotoTime(rs.getString(3));
-					photoBean.setPhotoInfo(rs.getString(4));
+					photoBean.setPhotoInfo(rs.getString(3));
+					photoBean.setPhotoTime(rs.getString(4));
 					list.add(photoBean);
 				}
 			} catch (SQLException e) {

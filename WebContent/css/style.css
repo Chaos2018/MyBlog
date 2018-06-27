@@ -40,7 +40,7 @@ body {
 	border: 1px solid #999999;
 }
 .btn_bg {
-	background-image:url(../../images/btn_bg.jpg); border:#436E9B thin 1px;
+	background-image:url(../images/btn_bg.jpg); border:#436E9B thin 1px;
 	width:48px;
 	height:20px;padding:4px;
 	color:#FFFFFF;

@@ -78,7 +78,7 @@ public class LogXServlet extends HttpServlet {
 			else{
 				HttpSession session=request.getSession();
 				session.setAttribute("logoner",logoner);
-				response.sendRedirect("admin/AdminIndex.jsp");
+				response.sendRedirect("/admin/AdminIndex.jsp");
 			}			
 		}
 		else{

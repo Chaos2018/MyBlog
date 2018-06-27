@@ -126,14 +126,15 @@ public class PhotoServlet extends HttpServlet {
 	 */
 	public void addPhoto(HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException {
 		//String filePath = "front\\photo\\pic\\";
-		String filePath = "front\\photo\\";
+		String filePath = "front\\\\photo\\\\pic\\\\";
 		String messages="";
 		String forward="";
 		String href="";
 		
 		PhotoDao photoDao = new PhotoDao();
 		PhotoBean photoBean = new PhotoBean();
-		SmartUpload su = new SmartUpload();	
+
+		SmartUpload su = new SmartUpload();
 		long maxsize = 2 * 1024 * 1024; 									// 设置每个上传文件的大小，为2MB
 		
 		try {
